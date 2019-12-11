@@ -1,6 +1,9 @@
 {
   "name": "node-express",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.6.0"
+  },
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -10,12 +13,7 @@
     "redis": "^2.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cross-env TZ=America/Sao_Paulo && cross-env NODE_ENV=development && ts-node src/server.ts",
-    "start_aws": "export NODE_ENV=production_aws && ts-node src/server.ts",
-    "dev": "cross-env TZ=America/Sao_Paulo && cross-env NODE_ENV=development && nodemon src/server.ts",
-    "prod": "cross-env TZ=America/Sao_Paulo && cross-env NODE_ENV=production && ts-node src/server.ts",
-    "debug": "cross-env TZ=America/Sao_Paulo && cross-env NODE_ENV=development && ts-node --inspect src/server.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
